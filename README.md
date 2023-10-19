@@ -1,9 +1,6 @@
 # Medcurity
 Here is the main repository for the medcurity project.
 
-### Trello Board
-https://trello.com/invite/b/cxddniEq/ATTIa820acb629695e8dec6181b5eededb21F081F9BE/medcurity-project
-
 ## Whitworth University Computer Science Senior Capstone Project
 
 ## Overview
