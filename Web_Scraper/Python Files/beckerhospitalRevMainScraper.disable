@@ -1,0 +1,58 @@
+## Based on the scraper tutorial found here 
+## https://proxyscrape.com/blog/web-scraping-for-news-articles-using-python
+
+## Different from Main
+## Does Not Return Information Yet!!
+
+import requests
+import xml
+from bs4 import BeautifulSoup
+
+#################################################################
+## Begin "Main" 
+#################################################################
+
+healthcareITurl = "https://www.healthcareitnews.com"
+
+healthITsecurityurl = "https://www.healthitsecurity.com"
+
+hippaJournalurl = "https://www.hipaajournal.com"
+
+govinfourl = "https://www.govinfosecurity.com"
+
+fierceHealthurl = "https://www.fiercehealthcare.com"
+
+beckersHealthITurl = "https://www.beckershospitalreview.com/healthcare-information-technology"
+
+beckersHospitalRevurl = "https://www.beckershospitalreview.com"
+
+# Request
+HEADERS = {'User-Agent': 'Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'}
+r1 = requests.get(beckersHospitalRevurl, headers=HEADERS)
+r1.status_code
+ 
+# We'll save in coverpage the cover page content
+healthcareITcoverpage = r1.content
+
+# Soup creation
+soup1 = BeautifulSoup(healthcareITcoverpage, 'html5lib')
+
+##########################################
+## Implemantation of scraping HTML ##
+##########################################
+
+## Source 7 - Becker Hosptial Review Main Page ##
+# News identification for Source 7
+coverpage_news = soup1.find_all('div', id='main-container')       # Select right column with latest news
+len(coverpage_news)
+
+
+    
+stories = coverpage_news[0].find_all('div', class_= 'module-content') # Get all stories in column labeled "view-content"
+
+articles = stories[0].find_all('div', class_= 'recent-post clearfix')         # Gets article and places in list of articles
+
+for each in range(len(articles) - 1):
+    
+    print(articles[each].get_text())           # Get article Title
+    print(articles[each].find('a')['href'])    # Get article URL

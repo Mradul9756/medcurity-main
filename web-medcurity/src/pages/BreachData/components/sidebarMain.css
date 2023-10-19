@@ -1,0 +1,108 @@
+/* Main Filter Sidebar Container (A part of the grid row to the left of the screen.
+    This should define all the base BG colors, colors, interactions & highlighted fade effects */
+.main-filter-nav {
+    /* Element Style */
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    height: calc(var(--linegraphcontainerheight) + var(--splitlinecontainerheight) + var(--pichartscontainerheight) + 20px);
+    z-index: 5;
+    transform: translate3d(0%, 0, 0);
+    transition: 0.4s ease-in;
+}
+
+/* The container space to be used by the expanded and compressed filter sidebar.
+    This should contain no visual styles, but be used to group each sidebar's display in this container. */
+.filter-nav-container {
+    position: absolute;
+    height: 100%;
+    z-index: 5;
+    left: 0;
+    transition: 0.4s ease-in;
+}
+
+/* Hide display of container */
+.container-hidden { display: none; }
+
+/* Sidebar Hidden State */
+.nav-compressed-width { width: 40px; }
+
+/* Sidebar Hidden State */
+.nav-expanded-width { width: var(--sidebarwidth); }
+
+/* Container that will be off the screen */
+.filter-nav-offscreen { transform: translate3d(-100%, 0, 0); }
+
+/* Container that will be on the screen */
+.filter-nav-onscreen { transform: translate3d(0%, 0, 0); }
+
+.expanded-filter-style {
+    height: 100%;
+    min-height: 100%;
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(6px);
+    background-color: var(--lightblue);
+    border-right: 4px solid var(--darkbluebg);
+    transition: 0.4s ease-in;
+}
+
+.expanded-filter-grid {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    transition: 0.4s ease-in;
+}
+
+.expanded-filter-header{
+    display: flex;
+    align-items: center;
+    padding: 4px 12px 4px;
+    min-height: 50px;
+    background-color: var(--lightblue);
+    border-bottom: 3px solid var(--darkblueaccent);
+}
+
+.compressed-filter-style {
+    height: 100%;
+    min-height: 100%;
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(6px);
+    background-color: var(--darkbluebg);
+}
+
+.pullout-button { z-index: 6; position: absolute; right: 0px; background: none;
+    border: none; cursor: pointer; margin: 6px -23px; background-color: var(--lightblue);
+    border: 3px solid var(--darkbluebg); padding: 0 5px 3px 7px; border-radius: 90px; height: 45px; width: 50px; }
+
+.pullout-button-sidebar { z-index: 6; position: absolute; right: 0px;
+    background: none; border: none; cursor: pointer; margin:15px;
+    background-color: var(--lightblueaccent); border: 2px solid var(--darkbluebg);
+    padding: 0 5px 3px 7px; border-radius: 9px; height: 45px; width: 50px; }
+
+.pullout-button span { display: block; margin-top: 5px; background-color: var(--white);
+    border-radius: 15px; height: 4px; width: 30px; transition: ease-out 0.4s; }
+
+.pullout-button-sidebar span { display: block; margin-top: 5px; background-color: var(--white);
+    border-radius: 15px; height: 4px; width: 30px; transition: ease-out 0.4s; }
+
+.pullout-button:hover span { margin: auto; }
+
+.pullout-button-sidebar:hover span { margin: auto; }
+
+/* transform the [=] on the button to reshape into a [<] */
+.pullout-button-in:hover span:nth-child(1) { width:25px; transform: translate(-3px, 10px) rotate(30deg);}
+.pullout-button-in:hover span:nth-child(2) { display: none;}
+.pullout-button-in:hover span:nth-child(3) { width:25px; transform: translate(-3px, -5px) rotate(-30deg);}
+/* transform the [<] on the button to reshape into a [>] */
+.pullout-button-out:hover span:nth-child(1) { width:25px; transform: translate(0px, 10px) rotate(-30deg);}
+.pullout-button-out:hover span:nth-child(2) { display: none;}
+.pullout-button-out:hover span:nth-child(3) { width:25px; transform: translate(0px, -5px) rotate(30deg);}
+
+

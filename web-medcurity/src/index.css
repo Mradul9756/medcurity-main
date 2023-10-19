@@ -1,0 +1,47 @@
+/* The Medcurity Color Palatte Template */
+:root {
+  /* Primary Color Palatte: */
+  --white: rgba(255,255,255,1.0);
+  --darkbluebg: rgba(11,38,61,1.0);
+  --darkblueaccent: rgba(23,77,125,1.0);
+  --lightblue: rgba(35,115,169,1.0);
+  --lightblueaccent: rgba(53,160,219,1.0);
+  --lightbluebright: rgba(151,203,232,1.0);
+  --lightblueultrabright: rgba(214,234,246,1.0);
+  --graymedcurity: rgba(190,190,190,1.0);
+  --graymedcuritylight: rgba(220,220,220,1.0);
+  --red: rgba(255,0,0,1.0);
+  /* Accents and highlights: */
+  --dynamic-button: rgba(255,255,255,0.2);
+  --dynamic-button-hover: rgba(255,255,255,0.3);
+  --dynamic-button-pressed: rgba(255,255,255,0.4);
+
+  --lighterbluetransparent: rgba(53,160,219,0.85);
+  --lightbluetransparent: rgba(35,115,169,0.9);
+  --darkbluetransparent: rgba(11,38,61,0.9);
+  --bgcontrasttransparent: hsla(0,0%,100%,0.16);
+  --highlightcontrast: hsla(0,0%,100%,0.5);
+
+  /* Important variables used several times throughout the breachdatapage and its subpages */
+  --sidebarwidth: 300px;
+  --linegraphcontainerheight: 40vh;
+  --splitlinecontainerheight: 50px;
+  --pichartscontainerheight: 50vh;
+  --rawdatacontainerheight: 400px;
+  --navbarheight: 65px; /* Subject to change */
+  --footerheight: 50px; /* Subject to change */
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace, 'lato';
+}

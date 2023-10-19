@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800.16 600.53" preserveAspectRatio="none">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: .21;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points="0 0 0 7.74 15.19 0 0 0"/>
+  <polygon class="cls-1" points="69.14 0 0 35.24 0 65.55 128.59 0 69.14 0"/>
+  <polygon class="cls-1" points="182.54 0 .22 92.93 0 123.35 242 0 182.54 0"/>
+  <polygon class="cls-1" points=".22 181.04 1.27 180.51 355.39 0 295.94 0 .22 150.74 .22 181.04"/>
+  <polygon class="cls-1" points=".22 238.85 468.8 0 409.35 0 .22 208.54 .22 238.85"/>
+  <polygon class="cls-1" points="522.75 0 0 266.46 0 296.76 582.2 0 522.75 0"/>
+  <polygon class="cls-1" points="636.15 0 0 324.26 0 354.57 695.61 0 636.15 0"/>
+  <polygon class="cls-1" points="800.16 0 747.35 0 0 380.95 0 411.25 800.16 3.39 800.16 0"/>
+  <polygon class="cls-1" points="800.16 30.89 0 438.75 0 469.06 800.16 61.2 800.16 30.89"/>
+  <polygon class="cls-1" points="800.16 88.69 0 496.56 0 526.86 800.16 119 800.16 88.69"/>
+  <polygon class="cls-1" points="800.16 146.5 0 554.36 0 584.66 800.16 176.8 800.16 146.5"/>
+  <polygon class="cls-1" points="800.16 234.61 800.16 204.3 22.82 600.53 82.28 600.53 800.16 234.61"/>
+  <polygon class="cls-1" points="800.16 292.41 800.16 262.11 136.23 600.53 195.68 600.53 800.16 292.41"/>
+  <polygon class="cls-1" points="800.16 350.22 800.16 319.91 249.63 600.53 309.09 600.53 800.16 350.22"/>
+  <polygon class="cls-1" points="800.16 408.02 800.16 377.72 363.03 600.53 422.49 600.53 800.16 408.02"/>
+  <polygon class="cls-1" points="800.16 465.83 800.16 435.52 476.44 600.53 535.89 600.53 800.16 465.83"/>
+  <polygon class="cls-1" points="800.16 523.63 800.16 493.33 589.84 600.53 649.29 600.53 800.16 523.63"/>
+  <polygon class="cls-1" points="800.16 581.44 800.16 551.13 703.24 600.53 762.7 600.53 800.16 581.44"/>
+</svg>

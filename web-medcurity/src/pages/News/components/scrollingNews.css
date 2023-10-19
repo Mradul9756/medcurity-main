@@ -1,0 +1,132 @@
+.scrollerContainer {
+    min-height: 45vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--darkbluebg);
+    border-bottom: 0.25vh solid var(--darkblueaccent);
+}
+
+.slider {
+    height: 100%;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(45vh * 12);
+    animation: scroll 50s linear infinite;
+}
+
+.slide-track:hover {
+    animation-play-state: paused;
+    transition: 1s;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-45vh * 6));
+    }
+}
+
+.slide {
+    height: 35vh;
+    width: 45vh;
+    display: flex;
+    align-items: center;
+    padding: 0vh 2.5vh 0vh 0vh;
+    perspective: 100px;
+}
+
+/* Gradient fade in and out shadows */
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, var(--darkbluebg),
+                                          rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 10%;
+    z-index: 2;
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+    transform: rotateZ(0deg);
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+/* Containers for the scrolling containers */
+
+/* Most Recent HIPPA JOURNAL site article */
+.MostRecentArticleHippaJournal {
+    background: url(../../../images/the-hipaa-journalLogo.svg) top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;}
+.MostRecentArticleHippaJournal:hover { transform: translateZ(15px); }
+
+/* Most Recent HEALTHCARE IT NEWS site article */
+.MostRecentArticle_HealthcareITNews {
+    background: url(../../../images/HealthcareITNewsLogo.svg) top;
+    background-repeat: no-repeat;
+    margin-top: 12%;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;}
+.MostRecentArticle_HealthcareITNews:hover { transform: translateZ(15px); }
+
+/* Most Recent GOV INFO SECURITY site article */
+.MostRecentArticle_GovInfoSecurity {
+    background: url(../../../images/govinfosecuritylogo.svg) top;
+    background-repeat: no-repeat;
+    margin-top: 16%;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;}
+.MostRecentArticle_GovInfoSecurity:hover { transform: translateZ(15px); }
+
+/* Most Recent FIERCE HEALTHCARE site article */
+.MostRecentArticle_FierceHealthcare {
+    background: url(../../../images/FierceHealthcareLogo.svg) top;
+    background-repeat: no-repeat;
+    margin-top: 3%;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;}
+.MostRecentArticle_FierceHealthcare:hover { transform: translateZ(15px); }
+
+/* Most recent HEALTHCARE IT site article */
+.MostRecentArticle_HealthcareIT {
+    background: url(../../../images/health-it-logo.svg) top;
+    background-repeat: no-repeat;
+    margin-top: 10%;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;}
+.MostRecentArticle_HealthcareIT:hover { transform: translateZ(15px); }
+
+/* Most recent HEALTH IT SECURITY site article */
+.MostRecentArticle_HealthITSecurity {
+    background-color: aquamarine;
+    background: url(../../../images/HealthITSeucrityLogo.svg) top;
+    background-repeat: no-repeat;
+    margin-top: 14%;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;}
+.MostRecentArticle_HealthITSecurity:hover { transform: translateZ(15px); }

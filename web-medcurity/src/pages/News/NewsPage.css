@@ -1,0 +1,71 @@
+.BGArticleContent {
+    display: flex;
+    background: url(../../images/bottomGradientTransparent.svg) center;
+    margin-top: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.CircleOne {
+    background: url(../../images/the-hipaa-journal_ICON.svg) center;
+    background-color: white;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-color: var(--lightblue);
+    z-index: 1;
+}
+
+.CircleTwo {
+    background: url(../../images/HealthcareITNews_ICONs.svg) center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-color: var(--lightblue);
+    z-index: 1;
+}
+
+.CircleThree {
+    background: url(../../images/govinfosecurity_ICON.svg) center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-color: var(--lightblue);
+    z-index: 1;
+}
+
+.CircleFour {
+    background: url(../../images/FierceHealthcare_ICON.svg) center;
+    background-repeat: no-repeat;
+    height: 100%;
+    border-radius: 50%;
+    border-color: var(--lightblue);
+    z-index: 1;
+}
+
+.CircleFive {
+    background: url(../../images/health-it_ICON.svg) center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-color: var(--lightblue);
+    z-index: 1;
+}
+
+.CircleSix {
+    background: url(../../images/HealthITSeucrity_ICON.svg) center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-color: var(--lightblue);
+    z-index: 1;
+}

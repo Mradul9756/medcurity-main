@@ -1,0 +1,137 @@
+/* REACT CALENDAR CSS FILE
+    - Brought in from node_modules for full control over customization
+    - Removing unessisary elements
+    - Styling nessisary elements. */
+
+/* The main calendar background */
+.react-calendar {
+    width: 100%; 
+    height: 100%;
+    background: var(--lightbluebright);
+    border-radius: 30px 30px 0 0;
+    font-family: Lato,sans-serif;
+    line-height: 1.125em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .react-calendar,
+  .react-calendar *,
+  .react-calendar *:before,
+  .react-calendar *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* Style for every button in the entire calendar */
+  .react-calendar button {
+    margin: 0;
+    border: 0;
+    outline: none;
+  }
+  
+  /* Defining the changing of the cursor when highlighting any element */
+  .react-calendar button:enabled:hover {
+    cursor: pointer;
+  }
+  
+  /* The styling for the navbar at the top (margin, height, disp. type */
+  .react-calendar__navigation {
+    display: flex;
+    height: 35px;
+  }
+  /* Flex placement for the day labels and day buttons */
+  .react-calendar__viewContainer {
+    display: flex;
+    height: 100%;
+  }
+  /* The left and right arrow buttons */
+  .react-calendar__navigation button {
+    min-width: 44px;
+    background-color: var(--darkblueaccent);
+    background: none;
+  }
+  
+  /* Color for hovered mouse on top navbar */
+  .react-calendar__navigation button:enabled:hover,
+  .react-calendar__navigation button:enabled:focus {
+    background-color: var(--highlightcontrast);
+  }
+
+  .react-calendar__navigation__prev2-button {
+    border-radius: 30px 0 0 0;
+  }
+  .react-calendar__navigation__next2-button {
+    border-radius: 0 30px 0 0;
+  }
+
+  /* Styling for displaying the weekdays */
+  .react-calendar__month-view__days {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Styling for displaying the weekdays */
+  .react-calendar__month-view__weekdays {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.75em;
+    display: flex;
+  }
+  
+  /* Styling for the select month button */
+  .react-calendar__month-view__weekdays__weekday {
+    padding: 3px;
+  }
+  /* Styling for the days of weekend */
+  /* .react-calendar__month-view__days__day--weekend {
+    color: #d10000;
+  } */
+  /* Styling for the days listed that are not a part of the current */
+  .react-calendar__month-view__days__day--neighboringMonth {
+    color: #757575;
+  }
+  
+  /* Styling for the other components like month year */
+  .react-calendar__year-view .react-calendar__tile,
+  .react-calendar__decade-view .react-calendar__tile,
+  .react-calendar__century-view .react-calendar__tile {
+    padding: 5%;
+  }
+  
+  /* Height of each tile in the month */
+  .react-calendar__tile {
+    max-width: 100%;
+    padding: 10px 6.6667px;
+    background: none;
+    text-align: center;
+    line-height: 4px;
+  }
+  
+  /* Highlight tiles you mouseover */
+  .react-calendar__tile:enabled:hover,
+  .react-calendar__tile:enabled:focus {
+    background-color: var(--lightblueultrabright);
+  }
+
+  /* Actively selected month / year in submenu */
+  .react-calendar__tile--hasActive {
+    background: #76baff;
+  }
+  /* The stylying for the active tile */
+  .react-calendar__tile--active {
+    background: var(--darkblueaccent);
+    color: var(--lightblueultrabright);
+  }
+  
+  .react-calendar__tile--active:enabled:hover,
+  .react-calendar__tile--active:enabled:focus {
+    background: var(--darkblueaccent);
+  }
+  
+  .react-calendar--selectRange .react-calendar__tile--hover {
+    background-color: #e6e6e6;
+  }
+  

@@ -1,0 +1,82 @@
+.custom-navbar {
+    background-color: var(--lightblue);
+    color: var(--lightblueaccent);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    display: flex;
+    border-bottom: 7.5px solid var(--darkblueaccent);
+    height: 60px;
+  }
+
+  .custom-navbar .parent-container {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  
+  .nav-link {
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 300;
+    outline: none; /* Add this line to remove the focus outline */
+  }
+
+  .custom-navbar .navbar-toggler .collapsed {
+    background-color: white;
+  }
+
+  .nav-tabs {
+    border: none;
+  }
+
+  .nav-item:hover {
+    border: none;
+  }
+
+  .custom-navbar .nav-item:hover{
+    
+    border: none;
+  }
+
+  .custom-navbar .nav-link:hover {
+    border: none;
+  }
+
+  .custom-navbar .nav-link .active:hover {
+    border: none;
+    
+  }
+
+  .custom-navbar .nav-item{
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+  }
+
+  .custom-navbar .nav-link {
+    background-color: var(--lightbluebright);
+    border: none;
+    padding-top: 2px;
+    padding-bottom: 0;
+    
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  .custom-navbar .nav-link.active {
+    background-color: var(--darkblueaccent);
+    border: none;
+    color: white;
+  }
+
+  /*Only when dropdown appears*/
+  @media (max-width: 991px) {
+    .custom-navbar .nav-link {
+      background-color: var(--lightbluebright);
+      border: none;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      border-radius: 0 !important;
+    }
+  }
+  

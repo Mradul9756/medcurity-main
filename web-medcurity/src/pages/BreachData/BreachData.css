@@ -1,0 +1,60 @@
+.BGUpperGradient {
+    background: url(../../images/linechartBG2.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: var(--linegraphcontainerheight);
+    z-index: 0;
+    position: absolute;
+}
+
+.BGGraphSplitDivider {
+    display: flex;
+    background: url(../../images/middleBGelement.svg) center;
+    margin-top: calc(var(--linegraphcontainerheight) - 5px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    border-bottom: var(--darkblueaccent) 1px solid;
+    z-index: 1
+}
+
+.BGPiCharts {
+    display: flex;
+    background: url(../../images/bottomGradientTransparent.svg) center;
+    margin-top: calc(var(--linegraphcontainerheight) + 5px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: calc(var(--pichartscontainerheight)/6 + 3vh);
+    position: absolute;
+    z-index: -1;
+}
+
+.BGlowerElement {
+    display: flex;
+    background: url(../../images/middleBGelement.svg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    z-index: 11;
+}
+
+.BGLowerGradient {
+    display: flex;
+    background: url(../../images/bottomGradientTransparent.svg) center;
+    margin-top: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: calc(300px/2);
+    position: absolute;
+    z-index: -1;
+}
+
+/* Remove once the actual stuff is in */
+.DummyContainerDisplay { height: 100%; width: 100%; }
