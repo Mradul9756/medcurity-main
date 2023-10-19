@@ -1,5 +1,5 @@
 # Medcurity
-Here is the main repository for the medcurity project.
+Here is the main repository for the medcurity project. To read more about the company, here's the link: https://medcurity.com/
 
 ## Whitworth University Computer Science Senior Capstone Project
 
